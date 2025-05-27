@@ -1,0 +1,122 @@
+.paypal-marketplace-cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paypal-marketplace-cart-empty {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.paypal-marketplace-cart-item-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paypal-marketplace-cart-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.paypal-marketplace-cart-item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+}
+
+.paypal-marketplace-cart-item-price {
+    font-size: 1.1rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.paypal-marketplace-cart-item-description {
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.paypal-marketplace-cart-remove {
+    margin-top: 10px;
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.paypal-marketplace-cart-remove:hover {
+    background-color: #c0392b !important;
+}
+
+.paypal-marketplace-cart-footer {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.paypal-marketplace-cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.paypal-marketplace-cart-total {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.paypal-marketplace-cart-actions {
+    flex-shrink: 0;
+}
+
+.paypal-marketplace-checkout-button {
+    background-color: #3498db !important;
+    border-color: #3498db !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    font-size: 1.1rem !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.paypal-marketplace-checkout-button:hover {
+    background-color: #2980b9 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .paypal-marketplace-cart-container {
+        padding: 10px;
+    }
+    
+    .paypal-marketplace-cart-summary {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .paypal-marketplace-cart-total {
+        font-size: 1.25rem;
+    }
+    
+    .paypal-marketplace-checkout-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+} 

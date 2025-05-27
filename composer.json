@@ -1,0 +1,30 @@
+{
+    "name": "elgg/paypal_marketplace",
+    "type": "elgg-plugin",
+    "description": "Enables member-to-member transactions using PayPal Business API",
+    "license": "GPL-2.0",
+    "keywords": ["elgg", "plugin", "paypal", "marketplace", "commerce"],
+    "homepage": "https://elgg.org",
+    "authors": [
+        {
+            "name": "Li Xing",
+            "email": "polarislee1984@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.0.8",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elgg\\PayPalMarketplace\\": "classes/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+} 

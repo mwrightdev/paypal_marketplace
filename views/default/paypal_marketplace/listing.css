@@ -1,0 +1,112 @@
+.paypal-marketplace-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paypal-marketplace-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.paypal-marketplace-item-wrapper {
+    flex: 1 1 320px;
+    max-width: 350px;
+    min-width: 280px;
+    display: flex;
+}
+
+.paypal-marketplace-item-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px 16px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.paypal-marketplace-item-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+    transform: translateY(-3px) scale(1.01);
+}
+
+.paypal-marketplace-item-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.paypal-marketplace-item-price {
+    font-size: 1.1rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.paypal-marketplace-item-description {
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+.paypal-marketplace-item-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.paypal-marketplace-add-to-cart {
+    background-color: #3498db !important;
+    border-color: #3498db !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 4px !important;
+    padding: 8px 18px !important;
+    transition: background-color 0.2s;
+}
+
+.paypal-marketplace-add-to-cart:hover {
+    background-color: #217dbb !important;
+}
+
+.elgg-button-edit {
+    background-color: #f1c40f !important;
+    border-color: #f1c40f !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    padding: 8px 18px !important;
+}
+
+.elgg-button-edit:hover {
+    background-color: #d4ac0d !important;
+}
+
+.elgg-button-delete {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    padding: 8px 18px !important;
+}
+
+.elgg-button-delete:hover {
+    background-color: #c0392b !important;
+}
+
+@media (max-width: 900px) {
+    .paypal-marketplace-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .paypal-marketplace-item-wrapper {
+        max-width: 100%;
+        min-width: 0;
+    }
+} 
